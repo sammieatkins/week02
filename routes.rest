@@ -1,0 +1,49 @@
+// LOCALHOST
+###
+GET http://localhost:8080/contacts
+###
+GET http://localhost:8080/contacts/65ac532a7f93e436b96c209c
+###
+GET http://localhost:8080/contacts/65ac53837f93e436b96c209d
+###
+GET http://localhost:8080/contacts/65ac53eb7f93e436b96c209e
+
+// PRODUCTION Deploy
+###
+GET https://cse341-instructor.herokuapp.com/contacts
+###
+GET https://cse341-instructor.herokuapp.com/contacts/622023f642f9ab4cd6e060b2
+###
+GET https://cse341-instructor.herokuapp.com/contacts/622023f642f9ab4cd6e060b3
+###
+GET https://cse341-instructor.herokuapp.com/contacts/622023f642f9ab4cd6e060b4
+
+// CREATE CONTACT
+###
+POST http://localhost:8080/contacts HTTP/1.1 
+Content-Type: application/json
+
+{
+    "firstName": "Sammie",
+    "lastName": "Atkins",
+    "email": "atkins.samantha57@gmail.com",
+    "favoriteColor": "Royal Blue",
+    "birthday": "05/07/2001"
+}
+
+// UPDATE CONTACT
+###
+PUT http://localhost:8080/contacts/65b49aebbc5bfdcba868d163
+Content-Type: application/json
+
+{
+    "firstName": "Sammie",
+    "lastName": "Atkins",
+    "email": "atk21007@byui.edu",
+    "favoriteColor": "Royal Blue",
+    "birthday": "05/07/2001"
+}
+
+// DELETE CONTACT
+###
+DELETE http://localhost:8080/contacts/65b47cfebc5bfdcba868d162
