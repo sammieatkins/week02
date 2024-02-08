@@ -6,8 +6,8 @@ const doc = {
     title: 'My API',
     description: 'Description'
   },
-  host: 'localhost:8080',
-  schemes: ['http']
+  host: 'web-services2.onrender.com/',
+  schemes: ['https']
 };
 // change to https for render
 // put the render url in host without the https://
